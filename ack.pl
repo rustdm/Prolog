@@ -2,9 +2,9 @@
 	This solves for the Ackermann function result of A(X, Y, A)
     	Where:
     
-    	A(x, y) = {		y + 1  				...  if x = 0, 
-        				A( x-1 , 1 )  		...  if y = 0, 
-                        A( x-1, A(x, y-1))  ...  otherwise.			}
+    	A(x, y) = {		y + 1  					...  if x = 0, 
+        			A( x-1 , 1 )  				...  if y = 0, 
+                        	A( x-1, A(x, y-1))  			...  otherwise.		}
     	*/
 
 ack(0, Y, A) :- A is Y + 1.
